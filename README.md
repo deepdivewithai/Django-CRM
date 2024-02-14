@@ -1,2 +1,1 @@
 "# Django-CRM" 
-"# Django-CRM" 
