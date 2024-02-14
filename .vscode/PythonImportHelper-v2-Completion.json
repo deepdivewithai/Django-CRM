@@ -1,104 +1,14 @@
 [
     {
-        "label": "django.contrib.auth.models",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "AbstractUser",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "django.db.models.deletion",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "django.db.models.deletion",
-        "description": "django.db.models.deletion",
-        "detail": "django.db.models.deletion",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
         "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
         "importPath": "django.contrib",
         "description": "django.contrib",
         "isExtraImport": true,
@@ -151,6 +61,54 @@
         "description": "django",
         "isExtraImport": true,
         "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
         "documentation": {}
     },
     {
@@ -242,27 +200,35 @@
         "documentation": {}
     },
     {
-        "label": "CreateView",
-        "importPath": "django.views.generic",
-        "description": "django.views.generic",
+        "label": "Agent",
+        "importPath": "leads.models",
+        "description": "leads.models",
         "isExtraImport": true,
-        "detail": "django.views.generic",
+        "detail": "leads.models",
         "documentation": {}
     },
     {
-        "label": "ListView",
-        "importPath": "django.views.generic",
-        "description": "django.views.generic",
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
         "isExtraImport": true,
-        "detail": "django.views.generic",
+        "detail": "django.contrib.auth",
         "documentation": {}
     },
     {
-        "label": "CreateView",
-        "importPath": "django.views.generic",
-        "description": "django.views.generic",
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
         "isExtraImport": true,
-        "detail": "django.views.generic",
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
         "documentation": {}
     },
     {
@@ -291,11 +257,75 @@
         "documentation": {}
     },
     {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
         "label": "static",
         "importPath": "django.conf.urls.static",
         "description": "django.conf.urls.static",
         "isExtraImport": true,
         "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "TemplateView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
+        "label": "ListView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
+        "label": "CreateView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
+        "label": "DetailView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
+        "label": "UpdateView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
+        "label": "DeleteView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
         "documentation": {}
     },
     {
@@ -333,6 +363,23 @@
         "documentation": {}
     },
     {
+        "label": "django.contrib.auth.models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
         "label": "django.contrib.auth.validators",
         "kind": 6,
         "isExtraImport": true,
@@ -342,21 +389,21 @@
         "documentation": {}
     },
     {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
         "label": "django.utils.timezone",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "django.utils.timezone",
         "description": "django.utils.timezone",
         "detail": "django.utils.timezone",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "authenticate.migrations.0001_initial",
-        "description": "authenticate.migrations.0001_initial",
-        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('leads', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='SignUp',\n            fields=[\n                ('user_ptr', models.OneToOneField(auto_created=True, on_delete=django.db.models.deletion.CASCADE, parent_link=True, primary_key=True, serialize=False, to=settings.AUTH_USER_MODEL)),",
-        "detail": "authenticate.migrations.0001_initial",
         "documentation": {}
     },
     {
@@ -373,7 +420,7 @@
         "kind": 5,
         "importPath": "authenticate.urls",
         "description": "authenticate.urls",
-        "peekOfCode": "app_name = 'auth'\nurlpatterns = [\n    # path('', views.SignUp.as_view(), name='signup')\n]",
+        "peekOfCode": "app_name = 'auth'\nurlpatterns = [\n    path('signup/', views.SignUp, name='signup'),\n    path('login/', views.LogIn, name='login'),\n    path('logout/', views.LogOut, name='logout'),\n]",
         "detail": "authenticate.urls",
         "documentation": {}
     },
@@ -382,8 +429,35 @@
         "kind": 5,
         "importPath": "authenticate.urls",
         "description": "authenticate.urls",
-        "peekOfCode": "urlpatterns = [\n    # path('', views.SignUp.as_view(), name='signup')\n]",
+        "peekOfCode": "urlpatterns = [\n    path('signup/', views.SignUp, name='signup'),\n    path('login/', views.LogIn, name='login'),\n    path('logout/', views.LogOut, name='logout'),\n]",
         "detail": "authenticate.urls",
+        "documentation": {}
+    },
+    {
+        "label": "SignUp",
+        "kind": 2,
+        "importPath": "authenticate.views",
+        "description": "authenticate.views",
+        "peekOfCode": "def SignUp(request):\n    print(request.POST)\n    if request.method == 'POST':\n        username = request.POST['username']\n        first_name = request.POST['fname']\n        last_name = request.POST['lname']\n        email = request.POST['email']\n        pass1 = request.POST['pass1']\n        pass2 = request.POST['pass2']\n        if not username.isalnum():",
+        "detail": "authenticate.views",
+        "documentation": {}
+    },
+    {
+        "label": "LogIn",
+        "kind": 2,
+        "importPath": "authenticate.views",
+        "description": "authenticate.views",
+        "peekOfCode": "def LogIn(request):\n    if request.method == 'POST':\n        username = request.POST['username']\n        pass1 = request.POST['pass1']\n        user = authenticate(username=username, password=pass1)\n        if user is not None:\n            name = user.username\n            login(request, user)\n            return render(request, 'landing_page.html', context={'name': name})\n        else:",
+        "detail": "authenticate.views",
+        "documentation": {}
+    },
+    {
+        "label": "LogOut",
+        "kind": 2,
+        "importPath": "authenticate.views",
+        "description": "authenticate.views",
+        "peekOfCode": "def LogOut(request):\n    logout(request)\n    return redirect(\"home\")",
+        "detail": "authenticate.views",
         "documentation": {}
     },
     {
@@ -535,7 +609,7 @@
         "kind": 5,
         "importPath": "DJCRM.settings",
         "description": "DJCRM.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\nSTATICFILES_DIRS = [\n    BASE_DIR / 'static'\n]\nSTATIC_ROOT = 'static_root'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = \"leads.User\"",
+        "peekOfCode": "STATIC_URL = 'static/'\nSTATICFILES_DIRS = [\n    BASE_DIR / 'static'\n]\nSTATIC_ROOT = 'static_root'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = \"leads.Agent\"",
         "detail": "DJCRM.settings",
         "documentation": {}
     },
@@ -544,7 +618,7 @@
         "kind": 5,
         "importPath": "DJCRM.settings",
         "description": "DJCRM.settings",
-        "peekOfCode": "STATICFILES_DIRS = [\n    BASE_DIR / 'static'\n]\nSTATIC_ROOT = 'static_root'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = \"leads.User\"",
+        "peekOfCode": "STATICFILES_DIRS = [\n    BASE_DIR / 'static'\n]\nSTATIC_ROOT = 'static_root'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = \"leads.Agent\"",
         "detail": "DJCRM.settings",
         "documentation": {}
     },
@@ -553,7 +627,7 @@
         "kind": 5,
         "importPath": "DJCRM.settings",
         "description": "DJCRM.settings",
-        "peekOfCode": "STATIC_ROOT = 'static_root'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = \"leads.User\"",
+        "peekOfCode": "STATIC_ROOT = 'static_root'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = \"leads.Agent\"",
         "detail": "DJCRM.settings",
         "documentation": {}
     },
@@ -562,7 +636,7 @@
         "kind": 5,
         "importPath": "DJCRM.settings",
         "description": "DJCRM.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = \"leads.User\"",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = \"leads.Agent\"",
         "detail": "DJCRM.settings",
         "documentation": {}
     },
@@ -571,7 +645,7 @@
         "kind": 5,
         "importPath": "DJCRM.settings",
         "description": "DJCRM.settings",
-        "peekOfCode": "AUTH_USER_MODEL = \"leads.User\"",
+        "peekOfCode": "AUTH_USER_MODEL = \"leads.Agent\"",
         "detail": "DJCRM.settings",
         "documentation": {}
     },
@@ -580,7 +654,7 @@
         "kind": 5,
         "importPath": "DJCRM.urls",
         "description": "DJCRM.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('auth/', include('authenticate.urls', namespace='auth')),\n    path('', include('leads.urls', namespace='leads'))\n]\nif settings.DEBUG:\n    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', TemplateView.as_view(template_name='landing_page.html'), name='home'),\n    path('auth/', include('authenticate.urls', namespace='auth')),\n    path('leads/', include('leads.urls', namespace='leads'))\n]\nif settings.DEBUG:\n    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)",
         "detail": "DJCRM.urls",
         "documentation": {}
     },
@@ -688,8 +762,17 @@
         "kind": 6,
         "importPath": "leads.migrations.0001_initial",
         "description": "leads.migrations.0001_initial",
-        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('auth', '0012_alter_user_first_name_max_length'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='User',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('auth', '0012_alter_user_first_name_max_length'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Agent',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
         "detail": "leads.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "leads.migrations.0002_alter_lead_age",
+        "description": "leads.migrations.0002_alter_lead_age",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('leads', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='lead',\n            name='age',\n            field=models.PositiveBigIntegerField(default=0),\n        ),",
+        "detail": "leads.migrations.0002_alter_lead_age",
         "documentation": {}
     },
     {
@@ -706,7 +789,7 @@
         "kind": 6,
         "importPath": "leads.forms",
         "description": "leads.forms",
-        "peekOfCode": "class LeadModelForm(forms.ModelForm):\n    class Meta:\n        model = Lead\n        fields = \"__all__\"\nclass AgentModelForm(forms.ModelForm):\n    class Meta:\n        model = Agent\n        fields = \"__all__\"",
+        "peekOfCode": "class LeadModelForm(forms.ModelForm):\n    class Meta:\n        model = Lead\n        fields = (\n            'first_name',\n            'last_name',\n            'age',\n            'email',\n            'agent'\n        )",
         "detail": "leads.forms",
         "documentation": {}
     },
@@ -715,16 +798,16 @@
         "kind": 6,
         "importPath": "leads.forms",
         "description": "leads.forms",
-        "peekOfCode": "class AgentModelForm(forms.ModelForm):\n    class Meta:\n        model = Agent\n        fields = \"__all__\"",
+        "peekOfCode": "class AgentModelForm(forms.ModelForm):\n    class Meta:\n        model = Agent\n        fields = (\n            'username',\n            'email',\n            'password',\n        )",
         "detail": "leads.forms",
         "documentation": {}
     },
     {
-        "label": "User",
+        "label": "Agent",
         "kind": 6,
         "importPath": "leads.models",
         "description": "leads.models",
-        "peekOfCode": "class User(AbstractUser):\n    pass\nclass Lead(models.Model):\n    first_name = models.CharField(max_length=20)\n    last_name = models.CharField(max_length=20)\n    age = models.IntegerField(default=0)\n    agent = models.ForeignKey(\"Agent\", on_delete=models.CASCADE)\n    def __str__(self) -> str:\n        return self.first_name\nclass Agent(models.Model):",
+        "peekOfCode": "class Agent(AbstractUser):\n    pass\nclass Lead(models.Model):\n    first_name = models.CharField(max_length=20)\n    last_name = models.CharField(max_length=20)\n    age = models.PositiveBigIntegerField(default=0)\n    email = models.EmailField()\n    agent = models.ForeignKey(Agent, on_delete=models.CASCADE)\n    def __str__(self) -> str:\n        return self.first_name",
         "detail": "leads.models",
         "documentation": {}
     },
@@ -733,16 +816,7 @@
         "kind": 6,
         "importPath": "leads.models",
         "description": "leads.models",
-        "peekOfCode": "class Lead(models.Model):\n    first_name = models.CharField(max_length=20)\n    last_name = models.CharField(max_length=20)\n    age = models.IntegerField(default=0)\n    agent = models.ForeignKey(\"Agent\", on_delete=models.CASCADE)\n    def __str__(self) -> str:\n        return self.first_name\nclass Agent(models.Model):\n    agent = models.ForeignKey(User, on_delete=models.CASCADE)\n    def __str__(self) -> str:",
-        "detail": "leads.models",
-        "documentation": {}
-    },
-    {
-        "label": "Agent",
-        "kind": 6,
-        "importPath": "leads.models",
-        "description": "leads.models",
-        "peekOfCode": "class Agent(models.Model):\n    agent = models.ForeignKey(User, on_delete=models.CASCADE)\n    def __str__(self) -> str:\n        return self.agent.email",
+        "peekOfCode": "class Lead(models.Model):\n    first_name = models.CharField(max_length=20)\n    last_name = models.CharField(max_length=20)\n    age = models.PositiveBigIntegerField(default=0)\n    email = models.EmailField()\n    agent = models.ForeignKey(Agent, on_delete=models.CASCADE)\n    def __str__(self) -> str:\n        return self.first_name",
         "detail": "leads.models",
         "documentation": {}
     },
@@ -751,7 +825,7 @@
         "kind": 5,
         "importPath": "leads.urls",
         "description": "leads.urls",
-        "peekOfCode": "app_name = 'leads'\nurlpatterns = [\n    path('', views.LeadsList.as_view(), name='lead-list'),\n    path('create/', views.LeadCreateView.as_view(), name='lead-create'),\n]",
+        "peekOfCode": "app_name = 'leads'\nurlpatterns = [\n    path('', views.LeadsList.as_view(), name='lead-list'),\n    path('agent-list/', views.AgentsList.as_view(), name='agent-list'),\n    path('<int:pk>/', views.LeadDetailView.as_view(), name='lead-detail'),\n    path('<int:pk>/delete', views.LeadDeleteView.as_view(), name='lead-delete'),\n    path('<int:pk>/update', views.LeadUpdateView.as_view(), name='lead-update'),\n    path('lead-create/', views.LeadCreateView.as_view(), name='lead-create'),\n    path('agent-create/', views.AgentCreateView.as_view(), name='agent-create'),\n]",
         "detail": "leads.urls",
         "documentation": {}
     },
@@ -760,8 +834,26 @@
         "kind": 5,
         "importPath": "leads.urls",
         "description": "leads.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.LeadsList.as_view(), name='lead-list'),\n    path('create/', views.LeadCreateView.as_view(), name='lead-create'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', views.LeadsList.as_view(), name='lead-list'),\n    path('agent-list/', views.AgentsList.as_view(), name='agent-list'),\n    path('<int:pk>/', views.LeadDetailView.as_view(), name='lead-detail'),\n    path('<int:pk>/delete', views.LeadDeleteView.as_view(), name='lead-delete'),\n    path('<int:pk>/update', views.LeadUpdateView.as_view(), name='lead-update'),\n    path('lead-create/', views.LeadCreateView.as_view(), name='lead-create'),\n    path('agent-create/', views.AgentCreateView.as_view(), name='agent-create'),\n]",
         "detail": "leads.urls",
+        "documentation": {}
+    },
+    {
+        "label": "AgentsList",
+        "kind": 6,
+        "importPath": "leads.views",
+        "description": "leads.views",
+        "peekOfCode": "class AgentsList(ListView):\n    template_name = 'agents/agent_list.html'\n    queryset = Agent.objects.all()\n    context_object_name = 'agents'\nclass AgentCreateView(CreateView):\n    template_name = 'agents/agent_create.html'\n    form_class = AgentModelForm\n    def get_success_url(self) -> str:\n        return reverse(\"leads:agent-list\")\n    def form_valid(self, form):",
+        "detail": "leads.views",
+        "documentation": {}
+    },
+    {
+        "label": "AgentCreateView",
+        "kind": 6,
+        "importPath": "leads.views",
+        "description": "leads.views",
+        "peekOfCode": "class AgentCreateView(CreateView):\n    template_name = 'agents/agent_create.html'\n    form_class = AgentModelForm\n    def get_success_url(self) -> str:\n        return reverse(\"leads:agent-list\")\n    def form_valid(self, form):\n            return super().form_valid(form)\n# Leads\nclass LeadsList(ListView):\n    template_name = 'leads/lead_list.html'",
+        "detail": "leads.views",
         "documentation": {}
     },
     {
@@ -769,7 +861,16 @@
         "kind": 6,
         "importPath": "leads.views",
         "description": "leads.views",
-        "peekOfCode": "class LeadsList(ListView):\n    template_name = 'leads/lead_list.html'\n    queryset = Lead.objects.all()\n    context_object_name = 'leads'\nclass LeadCreateView(CreateView):\n    template_name = 'leads/lead_create.html'\n    form_class = LeadModelForm\n    def get_success_url(self) -> str:\n        return reverse(\"leads:lead-list\")\n    def form_valid(self, form):",
+        "peekOfCode": "class LeadsList(ListView):\n    template_name = 'leads/lead_list.html'\n    queryset = Lead.objects.all()\n    context_object_name = 'leads'\nclass LeadDetailView(DetailView):\n    template_name = \"leads/lead_detail.html\"\n    queryset = Lead.objects.all()\n    context_object_name = 'lead'\nclass LeadCreateView(CreateView):\n    template_name = 'leads/lead_create.html'",
+        "detail": "leads.views",
+        "documentation": {}
+    },
+    {
+        "label": "LeadDetailView",
+        "kind": 6,
+        "importPath": "leads.views",
+        "description": "leads.views",
+        "peekOfCode": "class LeadDetailView(DetailView):\n    template_name = \"leads/lead_detail.html\"\n    queryset = Lead.objects.all()\n    context_object_name = 'lead'\nclass LeadCreateView(CreateView):\n    template_name = 'leads/lead_create.html'\n    form_class = LeadModelForm\n    def get_success_url(self) -> str:\n        return reverse(\"leads:lead-list\")\n    def form_valid(self, form):",
         "detail": "leads.views",
         "documentation": {}
     },
@@ -778,7 +879,25 @@
         "kind": 6,
         "importPath": "leads.views",
         "description": "leads.views",
-        "peekOfCode": "class LeadCreateView(CreateView):\n    template_name = 'leads/lead_create.html'\n    form_class = LeadModelForm\n    def get_success_url(self) -> str:\n        return reverse(\"leads:lead-list\")\n    def form_valid(self, form):\n        return super(LeadCreateView, self).form_valid(form)",
+        "peekOfCode": "class LeadCreateView(CreateView):\n    template_name = 'leads/lead_create.html'\n    form_class = LeadModelForm\n    def get_success_url(self) -> str:\n        return reverse(\"leads:lead-list\")\n    def form_valid(self, form):\n        return super(LeadCreateView, self).form_valid(form)\nclass LeadUpdateView(UpdateView):\n    template_name = 'leads/lead_update.html'\n    form_class = LeadModelForm",
+        "detail": "leads.views",
+        "documentation": {}
+    },
+    {
+        "label": "LeadUpdateView",
+        "kind": 6,
+        "importPath": "leads.views",
+        "description": "leads.views",
+        "peekOfCode": "class LeadUpdateView(UpdateView):\n    template_name = 'leads/lead_update.html'\n    form_class = LeadModelForm\n    queryset = Lead.objects.all()\n    def get_success_url(self) -> str:\n        return reverse(\"leads:lead-detail\", kwargs={'pk': self.object.pk})\nclass LeadDeleteView(DeleteView):\n    template_name = 'leads/lead_delete.html'\n    queryset = Lead.objects.all()\n    def get_success_url(self) -> str:",
+        "detail": "leads.views",
+        "documentation": {}
+    },
+    {
+        "label": "LeadDeleteView",
+        "kind": 6,
+        "importPath": "leads.views",
+        "description": "leads.views",
+        "peekOfCode": "class LeadDeleteView(DeleteView):\n    template_name = 'leads/lead_delete.html'\n    queryset = Lead.objects.all()\n    def get_success_url(self) -> str:\n        return reverse(\"leads:lead-list\")",
         "detail": "leads.views",
         "documentation": {}
     },

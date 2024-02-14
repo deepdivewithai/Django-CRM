@@ -2,9 +2,9 @@
 
 {% block content %}
 <ul class="leads-list">
-    {% for lead in leads %}
+    {% for agent in agents %}
     <li class="leads-list-item">
-        <a href="{% url 'leads:lead-detail' lead.pk %}" class="lead-link">{{ lead }}</a>
+        <a href="" class="lead-link">{{ agent }}</a>
     </li>
     {% endfor %}
 </ul>

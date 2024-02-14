@@ -1,3 +1,243 @@
-h1 {
+/* styles.css */
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.home-link {
+    margin-right: auto;
+}
+
+.btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.navbar:hover {
+    background-color: #f0f0f0;
+}
+
+/* Content area styles */
+.content {
+    margin-top: 20px;
+}
+
+.leads-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.leads-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.leads-list-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.leads-list-item:hover {
+    background-color: #e5e5e5;
+    transition: background-color 0.3s ease;
+}
+
+.lead-link {
+    color: #333;
+    text-decoration: none;
+}
+
+.lead-link:hover {
+    color: #4CAF50;
+}
+
+.lead-description {
+    margin: 5px 0;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+
+/* styles.css */
+
+/* Lead details styles */
+.lead-details-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.lead-details-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lead-detail-item {
+    margin-bottom: 10px;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+
+.btn-delete {
+    background-color: #f44336; /* Red */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-delete:hover {
+    background-color: #da190b; /* Darker red on hover */
+}
+
+/* styles.css */
+
+/* Lead update styles */
+.lead-update-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.lead-update-form {
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+
+
+/* styles.css */
+
+/* Delete confirmation styles */
+.delete-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.delete-form {
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+.btn-delete {
+    background-color: #f44336; /* Red */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-delete:hover {
+    background-color: #da190b; /* Darker red on hover */
+}
+
+/* styles.css */
+
+/* Lead creation styles */
+.lead-create-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.lead-create-form {
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
 }

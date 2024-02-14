@@ -1,0 +1,12 @@
+{% extends "base 2.html" %}
+
+{% block content %}
+<h1>Log In to Discover World of Possibilities!!!</h1>
+<form method="POST">
+    {% csrf_token %}
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" placeholder="Create a username..." required />
+    <label for="pass1">Password</label>
+    <input type="password" id="pass1" name="pass1" placeholder="Enter Your Password..." required />
+    <button type="submit">Sign Up</button>
+    {% endblock content %}

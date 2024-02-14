@@ -2,9 +2,9 @@
 
 {% block content %}
 
-<h3 class="lead-create-heading">Create New Lead:</h3>
+<h3 class="lead-update-heading">Update Lead:</h3>
 
-<form class="lead-create-form" action="" method="post">
+<form class="lead-update-form" method="post">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit" class="btn-primary">Submit</button>

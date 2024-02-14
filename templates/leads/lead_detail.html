@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3 class="lead-details-heading">Details of {{ lead }}:</h3>
+<ul class="lead-details-list">
+  <li class="lead-detail-item">Name: {{ lead.first_name }} {{ lead.last_name }}</li>
+  <li class="lead-detail-item">Age: {{ lead.age }}</li>
+  <li class="lead-detail-item">Email: {{ lead.email }}</li>
+</ul>
+
+<a href="{% url 'leads:lead-update' lead.pk %}" class="btn-primary">Edit Lead</a>
+<a href="{% url 'leads:lead-delete' lead.pk %}" class="btn-delete">Delete Lead</a>
+
+{% endblock content %}

@@ -6,30 +6,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DJCRM</title>
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Document</title>
+    <link href="{% static 'css/styles 2.css' %}" rel="stylesheet">
 </head>
 
 <body>
-    <div class="navbar">
-        {% if user.is_authenticated %}
-
-        <a href="{% url 'home' %}" class="home-link">Home</a>
-        <a href="{% url 'leads:lead-list' %}" class="right-link">Leads</a>
-        <a href="{% url 'leads:lead-create' %}" class="right-link">Create New Leads</a>
-        <a href="{% url 'leads:agent-list' %}" class="right-link">Agents</a>
-        <a href="{% url 'auth:logout' %}" class="right-link">Log Out</a>
-
-        {% else %}
-
-        <a href="{% url 'home' %}" class="home-link">Home</a>
-        <a href="{% url 'auth:signup' %}" class="right-link">Sign Up</a>
-        <a href="{% url 'auth:login' %}" class="right-link">Log In</a>
-
-        {% endif %}
-    </div>
-    {% block content %}
-    {% endblock %}
     <div class="container">
         {% for message in messages %}
         <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
@@ -39,6 +20,9 @@
             </button>
         </div>
         {% endfor %}
+        <a class="home-btn" href="{% url 'home' %}">Home</a>
+
+        {% block content %}{% endblock content %}
     </div>
 
     <!-- Include jQuery -->
