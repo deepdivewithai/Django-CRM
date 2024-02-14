@@ -16,8 +16,9 @@
 
         <a href="{% url 'home' %}" class="home-link">Home</a>
         <a href="{% url 'leads:lead-list' %}" class="right-link">Leads</a>
-        <a href="{% url 'leads:lead-create' %}" class="right-link">Create New Leads</a>
+        <a href="{% url 'leads:lead-create' user.pk %}" class="right-link">Create New Leads</a>
         <a href="{% url 'leads:agent-list' %}" class="right-link">Agents</a>
+        <a href="{% url 'leads:agent-detail' user.pk %}">{{user.username}}</a>
         <a href="{% url 'auth:logout' %}" class="right-link">Log Out</a>
 
         {% else %}

@@ -200,6 +200,14 @@
         "documentation": {}
     },
     {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "Agent",
         "importPath": "leads.models",
         "description": "leads.models",
@@ -825,7 +833,7 @@
         "kind": 5,
         "importPath": "leads.urls",
         "description": "leads.urls",
-        "peekOfCode": "app_name = 'leads'\nurlpatterns = [\n    path('', views.LeadsList.as_view(), name='lead-list'),\n    path('agent-list/', views.AgentsList.as_view(), name='agent-list'),\n    path('<int:pk>/', views.LeadDetailView.as_view(), name='lead-detail'),\n    path('<int:pk>/delete', views.LeadDeleteView.as_view(), name='lead-delete'),\n    path('<int:pk>/update', views.LeadUpdateView.as_view(), name='lead-update'),\n    path('lead-create/', views.LeadCreateView.as_view(), name='lead-create'),\n    path('agent-create/', views.AgentCreateView.as_view(), name='agent-create'),\n]",
+        "peekOfCode": "app_name = 'leads'\nurlpatterns = [\n    path('', views.LeadsList.as_view(), name='lead-list'),\n    path('agent-list/', views.AgentsList.as_view(), name='agent-list'),\n    path('<int:pk>/', views.LeadDetailView.as_view(), name='lead-detail'),\n    path('<int:pk>/lead-create', views.LeadsCreateView, name='lead-create'),\n    path('agent-create/', views.AgentCreateView.as_view(), name='agent-create'),\n    path('<int:pk>/delete', views.LeadDeleteView.as_view(), name='lead-delete'),\n    path('<int:pk>/update', views.LeadUpdateView.as_view(), name='lead-update'),\n    path('<int:pk>/detail', views.AgentDetailView.as_view(), name='agent-detail'),",
         "detail": "leads.urls",
         "documentation": {}
     },
@@ -834,7 +842,7 @@
         "kind": 5,
         "importPath": "leads.urls",
         "description": "leads.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.LeadsList.as_view(), name='lead-list'),\n    path('agent-list/', views.AgentsList.as_view(), name='agent-list'),\n    path('<int:pk>/', views.LeadDetailView.as_view(), name='lead-detail'),\n    path('<int:pk>/delete', views.LeadDeleteView.as_view(), name='lead-delete'),\n    path('<int:pk>/update', views.LeadUpdateView.as_view(), name='lead-update'),\n    path('lead-create/', views.LeadCreateView.as_view(), name='lead-create'),\n    path('agent-create/', views.AgentCreateView.as_view(), name='agent-create'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', views.LeadsList.as_view(), name='lead-list'),\n    path('agent-list/', views.AgentsList.as_view(), name='agent-list'),\n    path('<int:pk>/', views.LeadDetailView.as_view(), name='lead-detail'),\n    path('<int:pk>/lead-create', views.LeadsCreateView, name='lead-create'),\n    path('agent-create/', views.AgentCreateView.as_view(), name='agent-create'),\n    path('<int:pk>/delete', views.LeadDeleteView.as_view(), name='lead-delete'),\n    path('<int:pk>/update', views.LeadUpdateView.as_view(), name='lead-update'),\n    path('<int:pk>/detail', views.AgentDetailView.as_view(), name='agent-detail'),\n]",
         "detail": "leads.urls",
         "documentation": {}
     },
@@ -843,7 +851,16 @@
         "kind": 6,
         "importPath": "leads.views",
         "description": "leads.views",
-        "peekOfCode": "class AgentsList(ListView):\n    template_name = 'agents/agent_list.html'\n    queryset = Agent.objects.all()\n    context_object_name = 'agents'\nclass AgentCreateView(CreateView):\n    template_name = 'agents/agent_create.html'\n    form_class = AgentModelForm\n    def get_success_url(self) -> str:\n        return reverse(\"leads:agent-list\")\n    def form_valid(self, form):",
+        "peekOfCode": "class AgentsList(ListView):\n    template_name = 'agents/agent_list.html'\n    queryset = Agent.objects.all()\n    context_object_name = 'agents'\nclass AgentDetailView(DetailView):\n    template_name = \"agents/agent_detail.html\"\n    queryset = Agent.objects.all()\n    context_object_name = 'agent'\nclass AgentCreateView(CreateView):\n    template_name = 'agents/agent_create.html'",
+        "detail": "leads.views",
+        "documentation": {}
+    },
+    {
+        "label": "AgentDetailView",
+        "kind": 6,
+        "importPath": "leads.views",
+        "description": "leads.views",
+        "peekOfCode": "class AgentDetailView(DetailView):\n    template_name = \"agents/agent_detail.html\"\n    queryset = Agent.objects.all()\n    context_object_name = 'agent'\nclass AgentCreateView(CreateView):\n    template_name = 'agents/agent_create.html'\n    form_class = AgentModelForm\n    def get_success_url(self) -> str:\n        return reverse(\"leads:agent-list\")\n    def form_valid(self, form):",
         "detail": "leads.views",
         "documentation": {}
     },
@@ -861,7 +878,7 @@
         "kind": 6,
         "importPath": "leads.views",
         "description": "leads.views",
-        "peekOfCode": "class LeadsList(ListView):\n    template_name = 'leads/lead_list.html'\n    queryset = Lead.objects.all()\n    context_object_name = 'leads'\nclass LeadDetailView(DetailView):\n    template_name = \"leads/lead_detail.html\"\n    queryset = Lead.objects.all()\n    context_object_name = 'lead'\nclass LeadCreateView(CreateView):\n    template_name = 'leads/lead_create.html'",
+        "peekOfCode": "class LeadsList(ListView):\n    template_name = 'leads/lead_list.html'\n    queryset = Lead.objects.all()\n    context_object_name = 'leads'\nclass LeadDetailView(DetailView):\n    template_name = \"leads/lead_detail.html\"\n    queryset = Lead.objects.all()\n    context_object_name = 'lead'\ndef LeadsCreateView(request, pk):\n    if request.method == \"POST\":",
         "detail": "leads.views",
         "documentation": {}
     },
@@ -870,16 +887,7 @@
         "kind": 6,
         "importPath": "leads.views",
         "description": "leads.views",
-        "peekOfCode": "class LeadDetailView(DetailView):\n    template_name = \"leads/lead_detail.html\"\n    queryset = Lead.objects.all()\n    context_object_name = 'lead'\nclass LeadCreateView(CreateView):\n    template_name = 'leads/lead_create.html'\n    form_class = LeadModelForm\n    def get_success_url(self) -> str:\n        return reverse(\"leads:lead-list\")\n    def form_valid(self, form):",
-        "detail": "leads.views",
-        "documentation": {}
-    },
-    {
-        "label": "LeadCreateView",
-        "kind": 6,
-        "importPath": "leads.views",
-        "description": "leads.views",
-        "peekOfCode": "class LeadCreateView(CreateView):\n    template_name = 'leads/lead_create.html'\n    form_class = LeadModelForm\n    def get_success_url(self) -> str:\n        return reverse(\"leads:lead-list\")\n    def form_valid(self, form):\n        return super(LeadCreateView, self).form_valid(form)\nclass LeadUpdateView(UpdateView):\n    template_name = 'leads/lead_update.html'\n    form_class = LeadModelForm",
+        "peekOfCode": "class LeadDetailView(DetailView):\n    template_name = \"leads/lead_detail.html\"\n    queryset = Lead.objects.all()\n    context_object_name = 'lead'\ndef LeadsCreateView(request, pk):\n    if request.method == \"POST\":\n        first_name = request.POST['fname']\n        last_name = request.POST['lname']\n        age = request.POST['age']\n        email = request.POST['email']",
         "detail": "leads.views",
         "documentation": {}
     },
@@ -898,6 +906,15 @@
         "importPath": "leads.views",
         "description": "leads.views",
         "peekOfCode": "class LeadDeleteView(DeleteView):\n    template_name = 'leads/lead_delete.html'\n    queryset = Lead.objects.all()\n    def get_success_url(self) -> str:\n        return reverse(\"leads:lead-list\")",
+        "detail": "leads.views",
+        "documentation": {}
+    },
+    {
+        "label": "LeadsCreateView",
+        "kind": 2,
+        "importPath": "leads.views",
+        "description": "leads.views",
+        "peekOfCode": "def LeadsCreateView(request, pk):\n    if request.method == \"POST\":\n        first_name = request.POST['fname']\n        last_name = request.POST['lname']\n        age = request.POST['age']\n        email = request.POST['email']\n        agent = Agent.objects.get(id=pk)\n        Lead.objects.create(first_name=first_name,\n                            last_name=last_name,\n                            age=age,",
         "detail": "leads.views",
         "documentation": {}
     },

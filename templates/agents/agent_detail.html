@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3 class="lead-details-heading">Details of {{ agent }}:</h3>
+<ul class="lead-details-list">
+    <li class="lead-detail-item">Name: {{ agent.first_name }} {{ agent.last_name }}</li>
+    <li class="lead-detail-item">Email: {{ agent.email }}</li>
+</ul>
+{% endblock content %}
