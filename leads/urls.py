@@ -4,5 +4,6 @@ from . import views
 app_name = 'leads'
 
 urlpatterns = [
-    path('', views.home.as_view(), name='home')
+    path('', views.LeadsList.as_view(), name='lead-list'),
+    path('create/', views.LeadCreateView.as_view(), name='lead-create'),
 ]

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>This is all your Leads!!!</h1>
+{% for lead in leads %}
+
+<h3><a href="">{{ lead }}</a></h3>
+
+{% endfor %}
+
+{% endblock content %}
