@@ -88,22 +88,6 @@
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -125,6 +109,22 @@
         "description": "django.test",
         "isExtraImport": true,
         "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordResetTokenGenerator",
+        "importPath": "django.contrib.auth.tokens",
+        "description": "django.contrib.auth.tokens",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.tokens",
+        "documentation": {}
+    },
+    {
+        "label": "text_type",
+        "importPath": "six",
+        "description": "six",
+        "isExtraImport": true,
+        "detail": "six",
         "documentation": {}
     },
     {
@@ -173,6 +173,30 @@
         "description": "django.urls",
         "isExtraImport": true,
         "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
         "documentation": {}
     },
     {
@@ -240,6 +264,70 @@
         "documentation": {}
     },
     {
+        "label": "urlsafe_base64_encode",
+        "importPath": "django.utils.http",
+        "description": "django.utils.http",
+        "isExtraImport": true,
+        "detail": "django.utils.http",
+        "documentation": {}
+    },
+    {
+        "label": "urlsafe_base64_decode",
+        "importPath": "django.utils.http",
+        "description": "django.utils.http",
+        "isExtraImport": true,
+        "detail": "django.utils.http",
+        "documentation": {}
+    },
+    {
+        "label": "send_mail",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "EmailMessage",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_site",
+        "importPath": "django.contrib.sites.shortcuts",
+        "description": "django.contrib.sites.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.contrib.sites.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render_to_string",
+        "importPath": "django.template.loader",
+        "description": "django.template.loader",
+        "isExtraImport": true,
+        "detail": "django.template.loader",
+        "documentation": {}
+    },
+    {
+        "label": "force_bytes",
+        "importPath": "django.utils.encoding",
+        "description": "django.utils.encoding",
+        "isExtraImport": true,
+        "detail": "django.utils.encoding",
+        "documentation": {}
+    },
+    {
+        "label": "force_str",
+        "importPath": "django.utils.encoding",
+        "description": "django.utils.encoding",
+        "isExtraImport": true,
+        "detail": "django.utils.encoding",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -262,22 +350,6 @@
         "description": "pathlib",
         "isExtraImport": true,
         "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
         "documentation": {}
     },
     {
@@ -424,11 +496,29 @@
         "documentation": {}
     },
     {
+        "label": "TokenGenerator",
+        "kind": 6,
+        "importPath": "authenticate.tokens",
+        "description": "authenticate.tokens",
+        "peekOfCode": "class TokenGenerator(PasswordResetTokenGenerator):\n    def _make_hash_value(self, user, timestamp):\n        return (\n            text_type(user.pk) + text_type(timestamp)\n        )\ngenerate_token = TokenGenerator()",
+        "detail": "authenticate.tokens",
+        "documentation": {}
+    },
+    {
+        "label": "generate_token",
+        "kind": 5,
+        "importPath": "authenticate.tokens",
+        "description": "authenticate.tokens",
+        "peekOfCode": "generate_token = TokenGenerator()",
+        "detail": "authenticate.tokens",
+        "documentation": {}
+    },
+    {
         "label": "app_name",
         "kind": 5,
         "importPath": "authenticate.urls",
         "description": "authenticate.urls",
-        "peekOfCode": "app_name = 'auth'\nurlpatterns = [\n    path('signup/', views.SignUp, name='signup'),\n    path('login/', views.LogIn, name='login'),\n    path('logout/', views.LogOut, name='logout'),\n]",
+        "peekOfCode": "app_name = 'auth'\nurlpatterns = [\n    path('signup/', views.SignUp, name='signup'),\n    path('login/', views.LogIn, name='login'),\n    path('logout/', views.LogOut, name='logout'),\n    path('activate/<uid64>/<token>', views.activate, name='activate'),\n]",
         "detail": "authenticate.urls",
         "documentation": {}
     },
@@ -437,7 +527,7 @@
         "kind": 5,
         "importPath": "authenticate.urls",
         "description": "authenticate.urls",
-        "peekOfCode": "urlpatterns = [\n    path('signup/', views.SignUp, name='signup'),\n    path('login/', views.LogIn, name='login'),\n    path('logout/', views.LogOut, name='logout'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('signup/', views.SignUp, name='signup'),\n    path('login/', views.LogIn, name='login'),\n    path('logout/', views.LogOut, name='logout'),\n    path('activate/<uid64>/<token>', views.activate, name='activate'),\n]",
         "detail": "authenticate.urls",
         "documentation": {}
     },
@@ -464,7 +554,16 @@
         "kind": 2,
         "importPath": "authenticate.views",
         "description": "authenticate.views",
-        "peekOfCode": "def LogOut(request):\n    logout(request)\n    return redirect(\"home\")",
+        "peekOfCode": "def LogOut(request):\n    logout(request)\n    return redirect(\"home\")\ndef activate(request, uid64, token):\n    try:\n        uid = force_str(urlsafe_base64_decode(uid64))\n        myuser = Agent.objects.get(pk=uid)\n    except(TypeError, ValueError, OverflowError, Agent.DoesNotExist):\n        myuser = None\n    if myuser is not None and generate_token.check_token(myuser, token):",
+        "detail": "authenticate.views",
+        "documentation": {}
+    },
+    {
+        "label": "activate",
+        "kind": 2,
+        "importPath": "authenticate.views",
+        "description": "authenticate.views",
+        "peekOfCode": "def activate(request, uid64, token):\n    try:\n        uid = force_str(urlsafe_base64_decode(uid64))\n        myuser = Agent.objects.get(pk=uid)\n    except(TypeError, ValueError, OverflowError, Agent.DoesNotExist):\n        myuser = None\n    if myuser is not None and generate_token.check_token(myuser, token):\n        myuser.is_active = True\n        myuser.save()\n        login(request, myuser)",
         "detail": "authenticate.views",
         "documentation": {}
     },
@@ -617,7 +716,7 @@
         "kind": 5,
         "importPath": "DJCRM.settings",
         "description": "DJCRM.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\nSTATICFILES_DIRS = [\n    BASE_DIR / 'static'\n]\nSTATIC_ROOT = 'static_root'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = \"leads.Agent\"",
+        "peekOfCode": "STATIC_URL = 'static/'\nSTATICFILES_DIRS = [\n    BASE_DIR / 'static'\n]\nSTATIC_ROOT = 'static_root'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = \"leads.Agent\"\nEMAIL_BACKEND = \"django.core.mail.backends.smtp.EmailBackend\"",
         "detail": "DJCRM.settings",
         "documentation": {}
     },
@@ -626,7 +725,7 @@
         "kind": 5,
         "importPath": "DJCRM.settings",
         "description": "DJCRM.settings",
-        "peekOfCode": "STATICFILES_DIRS = [\n    BASE_DIR / 'static'\n]\nSTATIC_ROOT = 'static_root'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = \"leads.Agent\"",
+        "peekOfCode": "STATICFILES_DIRS = [\n    BASE_DIR / 'static'\n]\nSTATIC_ROOT = 'static_root'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = \"leads.Agent\"\nEMAIL_BACKEND = \"django.core.mail.backends.smtp.EmailBackend\"\nEMAIL_USE_TLS = True",
         "detail": "DJCRM.settings",
         "documentation": {}
     },
@@ -635,7 +734,7 @@
         "kind": 5,
         "importPath": "DJCRM.settings",
         "description": "DJCRM.settings",
-        "peekOfCode": "STATIC_ROOT = 'static_root'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = \"leads.Agent\"",
+        "peekOfCode": "STATIC_ROOT = 'static_root'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = \"leads.Agent\"\nEMAIL_BACKEND = \"django.core.mail.backends.smtp.EmailBackend\"\nEMAIL_USE_TLS = True\nEMAIL_HOST = \"smtp.gmail.com\"\nEMAIL_HOST_USER = \"test.djangoforme@gmail.com\"\nEMAIL_HOST_PASSWORD = \"fqkl bvmx eyrx wnxa\"",
         "detail": "DJCRM.settings",
         "documentation": {}
     },
@@ -644,7 +743,7 @@
         "kind": 5,
         "importPath": "DJCRM.settings",
         "description": "DJCRM.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = \"leads.Agent\"",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = \"leads.Agent\"\nEMAIL_BACKEND = \"django.core.mail.backends.smtp.EmailBackend\"\nEMAIL_USE_TLS = True\nEMAIL_HOST = \"smtp.gmail.com\"\nEMAIL_HOST_USER = \"test.djangoforme@gmail.com\"\nEMAIL_HOST_PASSWORD = \"fqkl bvmx eyrx wnxa\"\nEMAIL_PORT = 587",
         "detail": "DJCRM.settings",
         "documentation": {}
     },
@@ -653,7 +752,61 @@
         "kind": 5,
         "importPath": "DJCRM.settings",
         "description": "DJCRM.settings",
-        "peekOfCode": "AUTH_USER_MODEL = \"leads.Agent\"",
+        "peekOfCode": "AUTH_USER_MODEL = \"leads.Agent\"\nEMAIL_BACKEND = \"django.core.mail.backends.smtp.EmailBackend\"\nEMAIL_USE_TLS = True\nEMAIL_HOST = \"smtp.gmail.com\"\nEMAIL_HOST_USER = \"test.djangoforme@gmail.com\"\nEMAIL_HOST_PASSWORD = \"fqkl bvmx eyrx wnxa\"\nEMAIL_PORT = 587",
+        "detail": "DJCRM.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_BACKEND",
+        "kind": 5,
+        "importPath": "DJCRM.settings",
+        "description": "DJCRM.settings",
+        "peekOfCode": "EMAIL_BACKEND = \"django.core.mail.backends.smtp.EmailBackend\"\nEMAIL_USE_TLS = True\nEMAIL_HOST = \"smtp.gmail.com\"\nEMAIL_HOST_USER = \"test.djangoforme@gmail.com\"\nEMAIL_HOST_PASSWORD = \"fqkl bvmx eyrx wnxa\"\nEMAIL_PORT = 587",
+        "detail": "DJCRM.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_USE_TLS",
+        "kind": 5,
+        "importPath": "DJCRM.settings",
+        "description": "DJCRM.settings",
+        "peekOfCode": "EMAIL_USE_TLS = True\nEMAIL_HOST = \"smtp.gmail.com\"\nEMAIL_HOST_USER = \"test.djangoforme@gmail.com\"\nEMAIL_HOST_PASSWORD = \"fqkl bvmx eyrx wnxa\"\nEMAIL_PORT = 587",
+        "detail": "DJCRM.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST",
+        "kind": 5,
+        "importPath": "DJCRM.settings",
+        "description": "DJCRM.settings",
+        "peekOfCode": "EMAIL_HOST = \"smtp.gmail.com\"\nEMAIL_HOST_USER = \"test.djangoforme@gmail.com\"\nEMAIL_HOST_PASSWORD = \"fqkl bvmx eyrx wnxa\"\nEMAIL_PORT = 587",
+        "detail": "DJCRM.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_USER",
+        "kind": 5,
+        "importPath": "DJCRM.settings",
+        "description": "DJCRM.settings",
+        "peekOfCode": "EMAIL_HOST_USER = \"test.djangoforme@gmail.com\"\nEMAIL_HOST_PASSWORD = \"fqkl bvmx eyrx wnxa\"\nEMAIL_PORT = 587",
+        "detail": "DJCRM.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_PASSWORD",
+        "kind": 5,
+        "importPath": "DJCRM.settings",
+        "description": "DJCRM.settings",
+        "peekOfCode": "EMAIL_HOST_PASSWORD = \"fqkl bvmx eyrx wnxa\"\nEMAIL_PORT = 587",
+        "detail": "DJCRM.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_PORT",
+        "kind": 5,
+        "importPath": "DJCRM.settings",
+        "description": "DJCRM.settings",
+        "peekOfCode": "EMAIL_PORT = 587",
         "detail": "DJCRM.settings",
         "documentation": {}
     },
@@ -772,15 +925,6 @@
         "description": "leads.migrations.0001_initial",
         "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('auth', '0012_alter_user_first_name_max_length'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Agent',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
         "detail": "leads.migrations.0001_initial",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "leads.migrations.0002_alter_lead_age",
-        "description": "leads.migrations.0002_alter_lead_age",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('leads', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='lead',\n            name='age',\n            field=models.PositiveBigIntegerField(default=0),\n        ),",
-        "detail": "leads.migrations.0002_alter_lead_age",
         "documentation": {}
     },
     {
